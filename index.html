@@ -5,14 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panda-Commerce</title>
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 
 <body>
-    <header class="container">
+    <header id="home" class="container">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                <img src="images/logo.png" alt="">
+                <img src="images/logo.png">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -20,10 +21,10 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        <a class="nav-link" href="#">Shoes</a>
-                        <a class="nav-link" href="#">BackPack</a>
-                        <a class="nav-link" href="#" tabindex="-1" area-disabled="True">Subscribe</a>
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        <a class="nav-link" href="#shoes">Shoes</a>
+                        <a class="nav-link" href="#bag">BackPack</a>
+                        <a class="nav-link" href="#sub" tabindex="-1" area-disabled="True">Subscribe</a>
                     </div>
                 </div>
             </div>
@@ -35,7 +36,7 @@
                     <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
                     <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
                 </ol>
-                <div class="carousel-inner">
+                <div class="carousel-inner carousel-back">
                     <div class="carousel-item active">
                         <div class="row d-flex justify-content-center align-items-center p-5">
                             <div class="col-md-7">
@@ -89,40 +90,40 @@
         </section>
     </header>
     <main class="container">
-        <section class="container px-4 mt-5">
-            <div class="row gx-5">
+        <section class="container px-4 mt-5 catagories">
+            <div class="row g-5 ">
                 <div class="col">
                     <div class="p-3 border d-flex bg-warning rounded align-items-center justify-content-around">
                         <h1>Watch</h1>
-                        <img src="images/categories/watch.png" alt="">
+                        <img src="images/categories/watch.png">
                     </div>
                 </div>
                 <div class="col">
                     <div class="p-3 border d-flex bg-success rounded align-items-center justify-content-around">
                         <h1>Bag</h1>
-                        <img src="images/categories/bag.png" alt="">
+                        <img src="images/categories/bag.png">
                     </div>
                 </div>
                 <div class="col">
                     <div class="p-3 border d-flex bg-primary rounded align-items-center justify-content-around">
                         <h1>Shoes</h1>
-                        <img src="images/categories/shoes.png" alt="">
+                        <img src="images/categories/shoes.png">
                     </div>
                 </div>
             </div>
         </section>
-        <section class="mt-5">
+        <section id="shoes" class="mt-5">
             <h2>Shoes</h2>
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col">
-                    <div class="card h-100 shadow">
+                    <div class="card panda-card h-100 shadow">
                         <img src="images/shoes/shoe-1.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Supply 350</h5>
                             <p class="card-text">This is a longer card with supporting text below as a natural lead-in
                                 to additional.</p>
                         </div>
-                        <div class="card-footer">
+                        <div class="card-footer panda-card-footer">
                             <div>
                                 <h3>$120</h3>
                                 <button class="btn btn-primary">Buy Now >></button>
@@ -138,7 +139,7 @@
                             <p class="card-text">This card has supporting text below as a natural lead-in to additional
                                 content.</p>
                         </div>
-                        <div class="card-footer">
+                        <div class="card-footer panda-card-footer">
                             <div>
                                 <h3>$320</h3>
                                 <button class="btn btn-primary">Buy Now >></button>
@@ -154,7 +155,7 @@
                             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
                                 additional.</p>
                         </div>
-                        <div class="card-footer">
+                        <div class="card-footer panda-card-footer">
                             <div>
                                 <h3>$350</h3>
                                 <button class="btn btn-primary">Buy Now >></button>
@@ -164,7 +165,7 @@
                 </div>
             </div>
         </section>
-        <section class="mt-5">
+        <section id="bag" class="mt-5">
             <h2>Bags</h2>
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col">
@@ -175,7 +176,7 @@
                             <p class="card-text">This is a longer card with supporting text below as a natural lead-in
                                 to additional.</p>
                         </div>
-                        <div class="card-footer">
+                        <div class="card-footer panda-card-footer">
                             <div>
                                 <h3>$120</h3>
                                 <button class="btn btn-primary">Buy Now >></button>
@@ -191,7 +192,7 @@
                             <p class="card-text">This card has supporting text below as a natural lead-in to additional
                                 content.</p>
                         </div>
-                        <div class="card-footer">
+                        <div class="card-footer panda-card-footer">
                             <div>
                                 <h3>$320</h3>
                                 <button class="btn btn-primary">Buy Now >></button>
@@ -207,7 +208,7 @@
                             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
                                 additional.</p>
                         </div>
-                        <div class="card-footer">
+                        <div class="card-footer panda-card-footer">
                             <div>
                                 <h3>$169</h3>
                                 <button class="btn btn-primary">Buy Now >></button>
@@ -222,7 +223,7 @@
             <div>
                 <h1>LET'S STAY IN TOUCH</h1>
                 <h6>Get updates on sales,specials and more</h6>
-                <input type="text" placeholder="enter your email" name="" id="">
+                <input type="text" placeholder="enter your email">
                 <button class="btn btn-dark" type="submit">Submit</button>
             </div>
         </section>
